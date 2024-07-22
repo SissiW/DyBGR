@@ -23,5 +23,9 @@ schemes. Extensive experiments on deep metric learning tasks demonstrate the eff
 ## Architecture of DyBGR-based metric learning framework
 ![metric_learning](https://github.com/SissiW/DyBGR/blob/main/metric_learning.png)
 
+## Results on four datasets
+![results](https://github.com/SissiW/DyBGR/blob/main/results.png)
+
+
 
 

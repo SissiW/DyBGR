@@ -29,6 +29,9 @@ schemes. Extensive experiments on deep metric learning tasks demonstrate the eff
 ## Installation
 cuda12.1, python==3.9.7, pytorch-metric-learning==1.3.0, numpy==1.21, timm==0.3.2, pytorch==2.3.0
 
+## training & testing
+sh train.sh
+
 ## Citation
 If you find this project useful, please feel free to leave a star and cite our paper:
 ```

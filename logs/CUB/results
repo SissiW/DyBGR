@@ -1,0 +1,146 @@
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:803: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+{'K': 30,
+ 'T': 3,
+ 'alpha': 0.01,
+ 'beta': 0.5,
+ 'bs': 405,
+ 'clip_r': 2.3,
+ 'crop': 224,
+ 'depth': 2,
+ 'dist_training': False,
+ 'ds': 'CUB',
+ 'emb': 384,
+ 'emb_name': 'emb',
+ 'epsilon': 0.5,
+ 'eval_ep': '[50]',
+ 'freeze': 0,
+ 'hyp_c': 0.1,
+ 'lam': 0.3,
+ 'local_rank': 0,
+ 'lr': 3e-05,
+ 'lrt': 0.00085,
+ 'max_epoch': 50,
+ 'model': 'vit_base_patch16_224_in21k',
+ 'num_classes': 100,
+ 'num_heads': 8,
+ 'num_samples': 9,
+ 'path': '/DATA/gblav1/wxx/data/metric_learning/',
+ 'resize': 256,
+ 'resum_path': './logs',
+ 'resume': False,
+ 'save_emb': True,
+ 'savepath': './logs/CUB',
+ 't': 0.2}
+world_size:  1
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'")
+Start time 1691665830.14338
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/apex-0.1-py3.9.egg/apex/amp/wrap.py:111: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta, Number alpha) (Triggered internally at  /opt/conda/conda-bld/pytorch_1614378073850/work/torch/csrc/utils/python_arg_parser.cpp:1005.)
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32768.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16384.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8192.0
+Recall@K 0.799291019581364 0.8831870357866306 0.9351789331532748 0.9615124915597569
+Recall@K 0.8133018230925051 0.8909520594193113 0.9390614449696151 0.963031735313977
+2023-08-10 19:11:43 epoch[ 0 / 50 ], logits/mean: -29.826641382994474 , logits/acc: 0.7301954908503426 , loss: 1.3913907907834207 , lr: 3e-05
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4096.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2048.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 1024.0
+2023-08-10 19:11:52 epoch[ 1 / 50 ], logits/mean: -29.79901917775472 , logits/acc: 0.7465020774139298 , loss: 1.3775030090301126 , lr: 3e-05
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 512.0
+2023-08-10 19:12:00 epoch[ 2 / 50 ], logits/mean: -29.592982830824674 , logits/acc: 0.7455247088714883 , loss: 1.4101783868304834 , lr: 3e-05
+2023-08-10 19:12:09 epoch[ 3 / 50 ], logits/mean: -29.68775538161949 , logits/acc: 0.8317386963301234 , loss: 0.8349389696786939 , lr: 3e-05
+2023-08-10 19:12:19 epoch[ 4 / 50 ], logits/mean: -29.57015766920867 , logits/acc: 0.8472222332601194 , loss: 0.7779326097548215 , lr: 3e-05
+Recall@K 0.8700202565833896 0.925050641458474 0.9515530047265361 0.9682646860229575
+Recall@K 0.8772788656313302 0.9285955435516543 0.9517218095881161 0.9662390276839973
+2023-08-10 19:13:38 epoch[ 5 / 50 ], logits/mean: -29.376594684742116 , logits/acc: 0.8580247045115188 , loss: 0.6961541336581663 , lr: 3e-05
+2023-08-10 19:13:47 epoch[ 6 / 50 ], logits/mean: -29.586221085654365 , logits/acc: 0.8672839604594089 , loss: 0.6468497307117408 , lr: 3e-05
+2023-08-10 19:13:55 epoch[ 7 / 50 ], logits/mean: -29.950023668783682 , logits/acc: 0.8817901307785952 , loss: 0.576224472494451 , lr: 3e-05
+2023-08-10 19:14:04 epoch[ 8 / 50 ], logits/mean: -30.38847757268835 , logits/acc: 0.890792189096963 , loss: 0.5875796181843961 , lr: 3e-05
+2023-08-10 19:14:13 epoch[ 9 / 50 ], logits/mean: -30.610010270719176 , logits/acc: 0.880041161345111 , loss: 0.6010755640497707 , lr: 3e-05
+Recall@K 0.8774476704929102 0.9270762997974341 0.9520594193112761 0.9674206617150574
+Recall@K 0.8830182309250506 0.9302835921674544 0.9517218095881161 0.9670830519918974
+2023-08-10 19:15:29 epoch[ 10 / 50 ], logits/mean: -30.623290521127206 , logits/acc: 0.894135811538608 , loss: 0.5389149095302586 , lr: 3e-05
+2023-08-10 19:15:38 epoch[ 11 / 50 ], logits/mean: -30.635650837862933 , logits/acc: 0.8923353988815237 , loss: 0.5587553274828544 , lr: 3e-05
+2023-08-10 19:15:47 epoch[ 12 / 50 ], logits/mean: -30.68501461876763 , logits/acc: 0.9136831335447453 , loss: 0.4699291856830112 , lr: 3e-05
+2023-08-10 19:15:56 epoch[ 13 / 50 ], logits/mean: -30.677248813487864 , logits/acc: 0.8959362203324283 , loss: 0.5523885089863109 , lr: 3e-05
+2023-08-10 19:16:05 epoch[ 14 / 50 ], logits/mean: -30.705932007895576 , logits/acc: 0.8995884850069329 , loss: 0.5094566686850697 , lr: 3e-05
+Recall@K 0.8683322079675895 0.9181296421336934 0.9458136394328157 0.962356515867657
+Recall@K 0.8767724510465902 0.9228561782579339 0.9454760297096556 0.962187711006077
+2023-08-10 19:16:48 epoch[ 15 / 50 ], logits/mean: -30.622915568175138 , logits/acc: 0.921707824976356 , loss: 0.42975491430519874 , lr: 3e-05
+2023-08-10 19:16:58 epoch[ 16 / 50 ], logits/mean: -30.69955990932606 , logits/acc: 0.9090020642788322 , loss: 0.5068948083579825 , lr: 3e-05
+2023-08-10 19:17:07 epoch[ 17 / 50 ], logits/mean: -30.902670092052883 , logits/acc: 0.9226337511230398 , loss: 0.41415463277048226 , lr: 3e-05
+2023-08-10 19:17:15 epoch[ 18 / 50 ], logits/mean: -30.874299543875235 , logits/acc: 0.8957819005957356 , loss: 0.5258511531487953 , lr: 3e-05
+2023-08-10 19:17:25 epoch[ 19 / 50 ], logits/mean: -30.722459881394 , logits/acc: 0.9168724332142759 , loss: 0.42265034643194804 , lr: 3e-05
+Recall@K 0.863099257258609 0.9179608372721134 0.9485145172180959 0.9648885887913572
+Recall@K 0.8685010128291695 0.9213369345037137 0.9481769074949359 0.9665766374071574
+2023-08-10 19:18:08 epoch[ 20 / 50 ], logits/mean: -30.71089051387928 , logits/acc: 0.914814822099827 , loss: 0.4410530167817207 , lr: 3e-05
+2023-08-10 19:18:17 epoch[ 21 / 50 ], logits/mean: -30.787910638032137 , logits/acc: 0.9135288124283155 , loss: 0.44169813559037047 , lr: 3e-05
+2023-08-10 19:18:25 epoch[ 22 / 50 ], logits/mean: -30.772109967690927 , logits/acc: 0.9126543261938624 , loss: 0.45506698350827385 , lr: 3e-05
+2023-08-10 19:18:34 epoch[ 23 / 50 ], logits/mean: -30.85329231509456 , logits/acc: 0.9042181138087202 , loss: 0.48119302014324433 , lr: 3e-05
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 256.0
+2023-08-10 19:18:43 epoch[ 24 / 50 ], logits/mean: -30.905907728053904 , logits/acc: 0.9166152328252792 , loss: 0.44915734161083865 , lr: 3e-05
+Recall@K 0.8668129642133694 0.9211681296421337 0.9475016880486158 0.9653950033760972
+Recall@K 0.8674881836596894 0.9204929101958136 0.9461512491559757 0.9655638082376773
+2023-08-10 19:19:30 epoch[ 25 / 50 ], logits/mean: -30.910676170278478 , logits/acc: 0.9167695542176565 , loss: 0.416157734405715 , lr: 3e-05
+2023-08-10 19:19:40 epoch[ 26 / 50 ], logits/mean: -30.91167743117721 , logits/acc: 0.9089506246425487 , loss: 0.4678680244016707 , lr: 3e-05
+2023-08-10 19:19:48 epoch[ 27 / 50 ], logits/mean: -30.931858362974943 , logits/acc: 0.9314300456532726 , loss: 0.3795851713805826 , lr: 3e-05
+2023-08-10 19:19:58 epoch[ 28 / 50 ], logits/mean: -31.081405842745745 , logits/acc: 0.9352880699767007 , loss: 0.33867677817330266 , lr: 3e-05
+2023-08-10 19:20:07 epoch[ 29 / 50 ], logits/mean: -31.09272563015973 , logits/acc: 0.9325102945720708 , loss: 0.36859773790045575 , lr: 3e-05
+Recall@K 0.862930452397029 0.9176232275489534 0.9442943956785955 0.962187711006077
+Recall@K 0.8739027683997299 0.9208305199189737 0.9451384199864956 0.9638757596218771
+2023-08-10 19:20:50 epoch[ 30 / 50 ], logits/mean: -31.021492313455653 , logits/acc: 0.9127057688655676 , loss: 0.4351885311846639 , lr: 3e-05
+2023-08-10 19:21:00 epoch[ 31 / 50 ], logits/mean: -30.72737929556105 , logits/acc: 0.9312242851765068 , loss: 0.35090452890640506 , lr: 3e-05
+2023-08-10 19:21:09 epoch[ 32 / 50 ], logits/mean: -30.57067913479275 , logits/acc: 0.93374486019214 , loss: 0.3399184799906194 , lr: 3e-05
+2023-08-10 19:21:18 epoch[ 33 / 50 ], logits/mean: -30.54578776712771 , logits/acc: 0.928497946648686 , loss: 0.35563573112314634 , lr: 3e-05
+2023-08-10 19:21:27 epoch[ 34 / 50 ], logits/mean: -30.758133323104293 , logits/acc: 0.9352880699767007 , loss: 0.3485117355704898 , lr: 3e-05
+Recall@K 0.8561782579338285 0.9140783254557732 0.9442943956785955 0.962187711006077
+Recall@K 0.8652937204591492 0.9174544226873734 0.9436191762322755 0.9635381498987171
+2023-08-10 19:22:10 epoch[ 35 / 50 ], logits/mean: -30.86201406408239 , logits/acc: 0.9325102923644913 , loss: 0.36611324607306245 , lr: 3e-05
+2023-08-10 19:22:19 epoch[ 36 / 50 ], logits/mean: -31.01001163765236 , logits/acc: 0.9249485651100123 , loss: 0.40162889617150305 , lr: 3e-05
+2023-08-10 19:22:28 epoch[ 37 / 50 ], logits/mean: -30.899203132700038 , logits/acc: 0.9359567940787032 , loss: 0.3841181434658615 , lr: 3e-05
+2023-08-10 19:22:37 epoch[ 38 / 50 ], logits/mean: -30.968442969852024 , logits/acc: 0.9372428029223725 , loss: 0.3607943824662706 , lr: 3e-05
+2023-08-10 19:22:46 epoch[ 39 / 50 ], logits/mean: -31.113896166836774 , logits/acc: 0.9280349849550812 , loss: 0.38616710666920645 , lr: 3e-05
+Recall@K 0.8578663065496286 0.9144159351789332 0.9434503713706954 0.9615124915597569
+Recall@K 0.8666441593517893 0.9179608372721134 0.9439567859554355 0.9608372721134368
+2023-08-10 19:23:31 epoch[ 40 / 50 ], logits/mean: -31.140640656153362 , logits/acc: 0.9454218151944654 , loss: 0.3083773867617344 , lr: 3e-05
+2023-08-10 19:23:40 epoch[ 41 / 50 ], logits/mean: -31.166446765263874 , logits/acc: 0.9396090570975233 , loss: 0.33443011897907127 , lr: 3e-05
+2023-08-10 19:23:49 epoch[ 42 / 50 ], logits/mean: -31.181538882078947 , logits/acc: 0.9419753126524113 , loss: 0.3254272539666595 , lr: 3e-05
+2023-08-10 19:23:58 epoch[ 43 / 50 ], logits/mean: -31.20442427529229 , logits/acc: 0.9429526798151158 , loss: 0.3119448162679974 , lr: 3e-05
+2023-08-10 19:24:07 epoch[ 44 / 50 ], logits/mean: -31.19917919900682 , logits/acc: 0.9331790178462311 , loss: 0.3460738729670454 , lr: 3e-05
+Recall@K 0.8568534773801485 0.912221471978393 0.9451384199864956 0.9637069547602971
+Recall@K 0.8649561107359892 0.9194800810263336 0.9458136394328157 0.9635381498987171
+2023-08-10 19:24:50 epoch[ 45 / 50 ], logits/mean: -31.220023570237338 , logits/acc: 0.9484567931956716 , loss: 0.2641313375397995 , lr: 3e-05
+2023-08-10 19:24:59 epoch[ 46 / 50 ], logits/mean: -31.297791790079188 , logits/acc: 0.943621403641171 , loss: 0.29515347211795245 , lr: 3e-05
+2023-08-10 19:25:08 epoch[ 47 / 50 ], logits/mean: -31.39605642248083 , logits/acc: 0.9497428014874458 , loss: 0.2809433379181967 , lr: 3e-05
+2023-08-10 19:25:17 epoch[ 48 / 50 ], logits/mean: -31.48485177534598 , logits/acc: 0.9469135834111108 , loss: 0.2902848794439234 , lr: 3e-05
+2023-08-10 19:25:27 epoch[ 49 / 50 ], logits/mean: -31.423408949816668 , logits/acc: 0.946810703586649 , loss: 0.29224151110739277 , lr: 3e-05
+End time 1691666727.32825
+Running time 897.18487
+Epoch: 10 gets the best results! 
+ Recall@[1, 2, 4, 8, 16, 32]= [0.8774476704929102, 0.9270762997974341, 0.9520594193112761, 0.9674206617150574, 0.9767049291019582, 0.9819378798109386] where hyperbolic c= 0.1
+Epoch: 10 gets the best results! 
+ Recall@[1, 2, 4, 8, 16, 32]= [0.8830182309250506, 0.9302835921674544, 0.9517218095881161, 0.9670830519918974, 0.974848075624578, 0.9819378798109386]

@@ -1,0 +1,252 @@
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:803: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+{'K': 20,
+ 'T': 5,
+ 'alpha': 0.01,
+ 'beta': 0.5,
+ 'bs': 405,
+ 'clip_r': 2.3,
+ 'crop': 224,
+ 'depth': 2,
+ 'dist_training': False,
+ 'ds': 'Inshop',
+ 'emb': 384,
+ 'emb_name': 'emb',
+ 'epsilon': 0.5,
+ 'eval_ep': '[50]',
+ 'freeze': 0,
+ 'hyp_c': 0.1,
+ 'lam': 0.3,
+ 'local_rank': 0,
+ 'lr': 3e-05,
+ 'lrt': 0.0001,
+ 'max_epoch': 50,
+ 'model': 'vit_base_patch16_224_in21k',
+ 'num_classes': 3997,
+ 'num_heads': 8,
+ 'num_samples': 9,
+ 'path': '/DATA/gblav1/wxx/data/metric_learning/',
+ 'resize': 224,
+ 'resum_path': './logs',
+ 'resume': False,
+ 'save_emb': True,
+ 'savepath': './logs/Inshop',
+ 't': 0.2}
+world_size:  1
+Selected optimization level O1:  Insert automatic casts around Pytorch functions and Tensor methods.
+
+Defaults for this optimization level are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Processing user overrides (additional kwargs that are not None)...
+After processing overrides, optimization options are:
+enabled                : True
+opt_level              : O1
+cast_model_type        : None
+patch_torch_functions  : True
+keep_batchnorm_fp32    : None
+master_weights         : None
+loss_scale             : dynamic
+Warning:  multi_tensor_applier fused unscale kernel is unavailable, possibly because apex was installed without --cuda_ext --cpp_ext. Using Python fallback.  Original ImportError was: ModuleNotFoundError("No module named 'amp_C'")
+Start time 1692192548.82809
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/apex-0.1-py3.9.egg/apex/amp/wrap.py:111: UserWarning: This overload of addmm_ is deprecated:
+	addmm_(Number beta, Number alpha, Tensor mat1, Tensor mat2)
+Consider using one of the following signatures instead:
+	addmm_(Tensor mat1, Tensor mat2, *, Number beta, Number alpha) (Triggered internally at  /opt/conda/conda-bld/pytorch_1614378073850/work/torch/csrc/utils/python_arg_parser.cpp:1005.)
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 32768.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 16384.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 8192.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 4096.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 2048.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 1024.0
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 512.0
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9013926009284006 0.9806583204388802 0.9869179912786609 0.989731326487551
+Recall@K 0.90512027008018 0.9812913208608806 0.9876916584611056 0.9907159938106626
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 21:36:06 epoch[ 0 / 50 ], logits/mean: -29.176335066296485 , logits/acc: 0.9173049505767453 , loss: 0.4789950085824795 , lr: 3e-05
+2023-08-16 21:39:09 epoch[ 1 / 50 ], logits/mean: -31.341210248913807 , logits/acc: 0.9620847463626391 , loss: 0.24199380528544553 , lr: 3e-05
+2023-08-16 21:42:13 epoch[ 2 / 50 ], logits/mean: -32.68916755728656 , logits/acc: 0.9736468695411075 , loss: 0.1831377715054904 , lr: 3e-05
+2023-08-16 21:45:14 epoch[ 3 / 50 ], logits/mean: -33.542201389831845 , logits/acc: 0.9787298548366693 , loss: 0.15333503543674834 , lr: 3e-05
+2023-08-16 21:48:18 epoch[ 4 / 50 ], logits/mean: -34.11862639511718 , logits/acc: 0.9828898197181811 , loss: 0.13364726080047315 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9149669433112956 0.9861443240962161 0.9914896609931073 0.9933886622591082
+Recall@K 0.9191869461246307 0.9867069911379941 0.9917709945139963 0.9931073287382192
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 21:55:33 epoch[ 5 / 50 ], logits/mean: -34.40900490792949 , logits/acc: 0.9849188148733531 , loss: 0.12036376386526541 , lr: 3e-05
+2023-08-16 21:58:39 epoch[ 6 / 50 ], logits/mean: -34.55796254321133 , logits/acc: 0.9870081700375315 , loss: 0.10774583404795958 , lr: 3e-05
+2023-08-16 22:01:44 epoch[ 7 / 50 ], logits/mean: -34.693646211897985 , logits/acc: 0.9881610081957818 , loss: 0.10161297019655652 , lr: 3e-05
+2023-08-16 22:04:48 epoch[ 8 / 50 ], logits/mean: -34.87206778067923 , logits/acc: 0.9899968326501036 , loss: 0.09197478031186729 , lr: 3e-05
+2023-08-16 22:07:51 epoch[ 9 / 50 ], logits/mean: -34.80883291627882 , logits/acc: 0.9901916904470298 , loss: 0.08853266684208519 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9227036151357434 0.9857223238148826 0.9912083274722183 0.9931776621184414
+Recall@K 0.9265719510479674 0.9869883246588831 0.9915599943733295 0.9941623294415529
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 22:14:51 epoch[ 10 / 50 ], logits/mean: -34.94988513201215 , logits/acc: 0.9916382680336634 , loss: 0.07997027528012615 , lr: 3e-05
+2023-08-16 22:17:49 epoch[ 11 / 50 ], logits/mean: -35.02675802430856 , logits/acc: 0.9922855444782682 , loss: 0.07405317091116273 , lr: 3e-05
+2023-08-16 22:20:47 epoch[ 12 / 50 ], logits/mean: -35.058224097024485 , logits/acc: 0.9929042343194416 , loss: 0.06888326004209443 , lr: 3e-05
+2023-08-16 22:23:46 epoch[ 13 / 50 ], logits/mean: -35.02320128582539 , logits/acc: 0.9932187809870484 , loss: 0.06571659134682291 , lr: 3e-05
+2023-08-16 22:26:44 epoch[ 14 / 50 ], logits/mean: -35.03306061200583 , logits/acc: 0.9932054718595914 , loss: 0.06568302776118462 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9212969475312983 0.9860739907159938 0.9901533267688846 0.9923336615557744
+Recall@K 0.9267829511886341 0.9864959909973273 0.9907863271908848 0.9928963285975524
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 22:33:29 epoch[ 15 / 50 ], logits/mean: -35.18214906675836 , logits/acc: 0.9940684133403459 , loss: 0.0602116091301131 , lr: 3e-05
+2023-08-16 22:36:32 epoch[ 16 / 50 ], logits/mean: -35.106285934591114 , logits/acc: 0.9936868520581469 , loss: 0.061719553420199816 , lr: 3e-05
+2023-08-16 22:39:32 epoch[ 17 / 50 ], logits/mean: -35.14289270179548 , logits/acc: 0.9941919451293427 , loss: 0.059209661779746604 , lr: 3e-05
+2023-08-16 22:42:30 epoch[ 18 / 50 ], logits/mean: -35.07116497768445 , logits/acc: 0.9942080661114979 , loss: 0.061080133199603696 , lr: 3e-05
+2023-08-16 22:45:28 epoch[ 19 / 50 ], logits/mean: -35.099790594551 , logits/acc: 0.9946566420082891 , loss: 0.05514918021305383 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9203122802081868 0.9860739907159938 0.9903643269095512 0.9926853284568856
+Recall@K 0.9272049514699676 0.9865663243775495 0.9912786608524405 0.9931073287382192
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 22:52:10 epoch[ 20 / 50 ], logits/mean: -35.17049874676003 , logits/acc: 0.9956074054265737 , loss: 0.04982680519269218 , lr: 3e-05
+2023-08-16 22:55:08 epoch[ 21 / 50 ], logits/mean: -35.187224621481064 , logits/acc: 0.9950980946570449 , loss: 0.04906653665381604 , lr: 3e-05
+2023-08-16 22:58:06 epoch[ 22 / 50 ], logits/mean: -35.2926530915402 , logits/acc: 0.9955238949660952 , loss: 0.046221936470683615 , lr: 3e-05
+2023-08-16 23:01:04 epoch[ 23 / 50 ], logits/mean: -35.30835825435529 , logits/acc: 0.995868246774474 , loss: 0.04428538162776905 , lr: 3e-05
+2023-08-16 23:04:02 epoch[ 24 / 50 ], logits/mean: -35.3451596723216 , logits/acc: 0.9960876609502214 , loss: 0.04113309700173903 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9219299479532986 0.9849486566324378 0.9906456604304403 0.9924743283162188
+Recall@K 0.9253762835841891 0.9865663243775495 0.9913489942326629 0.9930369953579969
+2023-08-16 23:09:45 epoch[ 25 / 50 ], logits/mean: -35.32648984085159 , logits/acc: 0.9960546691747343 , loss: 0.041284929949575284 , lr: 3e-05
+2023-08-16 23:12:44 epoch[ 26 / 50 ], logits/mean: -35.35329474105073 , logits/acc: 0.9967676480015863 , loss: 0.037452030243034604 , lr: 3e-05
+2023-08-16 23:15:42 epoch[ 27 / 50 ], logits/mean: -35.23778028702468 , logits/acc: 0.9966054071164161 , loss: 0.03889626160237091 , lr: 3e-05
+2023-08-16 23:18:39 epoch[ 28 / 50 ], logits/mean: -35.37256116962314 , logits/acc: 0.9970334568589962 , loss: 0.034276967349172405 , lr: 3e-05
+2023-08-16 23:21:36 epoch[ 29 / 50 ], logits/mean: -35.23986656865228 , logits/acc: 0.9962959216533231 , loss: 0.03853523022741448 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9234772823181883 0.9855113236742158 0.990575327050218 0.9926853284568856
+Recall@K 0.9285412856941905 0.9874806583204389 0.9921226614151076 0.9935996623997749
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-16 23:28:20 epoch[ 30 / 50 ], logits/mean: -35.34960819213429 , logits/acc: 0.9968947413727437 , loss: 0.034768585502695785 , lr: 3e-05
+Gradient overflow.  Skipping step, loss scaler 0 reducing loss scale to 512.0
+2023-08-16 23:31:17 epoch[ 31 / 50 ], logits/mean: -35.323947409416704 , logits/acc: 0.9963328499584162 , loss: 0.03577235778554249 , lr: 3e-05
+2023-08-16 23:34:15 epoch[ 32 / 50 ], logits/mean: -35.31145058083028 , logits/acc: 0.9970696353529128 , loss: 0.033075687205983216 , lr: 3e-05
+2023-08-16 23:37:11 epoch[ 33 / 50 ], logits/mean: -35.40063949053951 , logits/acc: 0.9973289770784598 , loss: 0.030457165600829273 , lr: 3e-05
+2023-08-16 23:40:11 epoch[ 34 / 50 ], logits/mean: -35.28923080863429 , logits/acc: 0.9969613810398903 , loss: 0.03205624539193278 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9250246166830778 0.9857926571951048 0.9910676607117738 0.9928963285975524
+Recall@K 0.9282599521733015 0.9871993247995499 0.9917709945139963 0.9936699957799972
+2023-08-16 23:45:52 epoch[ 35 / 50 ], logits/mean: -35.32886541142744 , logits/acc: 0.9969294202443069 , loss: 0.03174280548707966 , lr: 3e-05
+2023-08-16 23:48:53 epoch[ 36 / 50 ], logits/mean: -35.487804787286954 , logits/acc: 0.997305920321992 , loss: 0.030254945066614632 , lr: 3e-05
+2023-08-16 23:51:54 epoch[ 37 / 50 ], logits/mean: -35.4153394526459 , logits/acc: 0.9975541085748935 , loss: 0.02908170900117694 , lr: 3e-05
+2023-08-16 23:54:54 epoch[ 38 / 50 ], logits/mean: -35.386269583088925 , logits/acc: 0.9970851939976141 , loss: 0.030594577360649366 , lr: 3e-05
+2023-08-16 23:57:55 epoch[ 39 / 50 ], logits/mean: -35.41230929121096 , logits/acc: 0.9973262590024802 , loss: 0.027766711010066655 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9260796173864115 0.9857926571951048 0.9904346602897736 0.9923336615557744
+Recall@K 0.9327612885075257 0.9874103249402166 0.9915676607117738 0.9933886622591082
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+2023-08-17 00:04:42 epoch[ 40 / 50 ], logits/mean: -35.31599011820056 , logits/acc: 0.997637337866645 , loss: 0.02574852354335464 , lr: 3e-05
+2023-08-17 00:07:43 epoch[ 41 / 50 ], logits/mean: -35.31110094489527 , logits/acc: 0.997707726589675 , loss: 0.02564928267323315 , lr: 3e-05
+2023-08-17 00:10:44 epoch[ 42 / 50 ], logits/mean: -35.36230288611518 , logits/acc: 0.9974748158127479 , loss: 0.026534179329634724 , lr: 3e-05
+2023-08-17 00:13:45 epoch[ 43 / 50 ], logits/mean: -35.4134163779117 , logits/acc: 0.9978630317005326 , loss: 0.02484945541605401 , lr: 3e-05
+2023-08-17 00:16:48 epoch[ 44 / 50 ], logits/mean: -35.35489240686843 , logits/acc: 0.9978692176636685 , loss: 0.023163775113597934 , lr: 3e-05
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+/DATA/anaconda3/envs/wxx/lib/python3.9/site-packages/torchvision/transforms/transforms.py:257: UserWarning: Argument interpolation should be of type InterpolationMode instead of int. Please, use InterpolationMode enum.
+  warnings.warn(
+Recall@K 0.9208749472499649 0.9853706569137712 0.9907159938106626 0.9931073287382192
+Recall@K 0.9255169503446335 0.9869883246588831 0.9919116612744409 0.9936699957799972
+2023-08-17 00:22:30 epoch[ 45 / 50 ], logits/mean: -35.416098625621245 , logits/acc: 0.9980190866225668 , loss: 0.02281984077203691 , lr: 3e-05
+2023-08-17 00:25:31 epoch[ 46 / 50 ], logits/mean: -35.35637772246991 , logits/acc: 0.9982402815893944 , loss: 0.020188218970120336 , lr: 3e-05
+2023-08-17 00:28:31 epoch[ 47 / 50 ], logits/mean: -35.391048431396484 , logits/acc: 0.9979427931051278 , loss: 0.023279239669157025 , lr: 3e-05
+2023-08-17 00:31:32 epoch[ 48 / 50 ], logits/mean: -35.4765226480815 , logits/acc: 0.9982499354396867 , loss: 0.02023439325519453 , lr: 3e-05
+2023-08-17 00:34:32 epoch[ 49 / 50 ], logits/mean: -35.435614732320836 , logits/acc: 0.9976175615236107 , loss: 0.023488602108211375 , lr: 3e-05
+End time 1692203672.66966
+Running time 11123.84157
+Epoch: 40 gets the best results! 
+ Recall@[1, 10, 20, 30, 40, 50]= [0.9260796173864115, 0.9857926571951048, 0.9904346602897736, 0.9923336615557744, 0.9933886622591082, 0.9942326628217752] where hyperbolic c= 0.1
+Epoch: 40 gets the best results! 
+ Recall@[1, 10, 20, 30, 40, 50]= [0.9327612885075257, 0.9874103249402166, 0.9915676607117738, 0.9933886622591082, 0.994443662962442, 0.99500633000422]

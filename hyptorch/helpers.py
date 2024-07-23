@@ -41,7 +41,6 @@ def get_recall(x, y, ds_name, hyp_c):
                 y: torch.Size([B]) 
     ds_name: CUB
     '''
-    # print('0', x.size(), y.size(), y)  # torch.Size([5924, 384]) torch.Size([5924])
     if ds_name == "CUB" or ds_name == "Cars":
         k_list = [1, 2, 4, 8, 16, 32]
     elif ds_name == "SOP":

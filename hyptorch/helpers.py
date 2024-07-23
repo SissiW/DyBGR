@@ -20,7 +20,7 @@ class MultiSample:
 
 def evaluate(get_emb_f, ds_name, hyp_c):
     if ds_name != "Inshop":
-        emb_head = get_emb_f(ds_type="eval")  # cub dataset: torch.Size([5924, 128]) torch.Size([5924])
+        emb_head = get_emb_f(ds_type="eval")  
         emb_body = get_emb_f(ds_type="eval", skip_head=True)
         recall_head, recall_head_all = get_recall(*emb_head, ds_name, hyp_c)
         recall_body, recall_body_all = get_recall(*emb_body, ds_name, 0)
@@ -37,8 +37,8 @@ def evaluate(get_emb_f, ds_name, hyp_c):
 def get_recall(x, y, ds_name, hyp_c):
     '''
     cub dataset:
-                x: torch.Size([5924, 128]) 
-                y: torch.Size([5924]) 
+                x: torch.Size([B, C]) 
+                y: torch.Size([B]) 
     ds_name: CUB
     '''
     # print('0', x.size(), y.size(), y)  # torch.Size([5924, 384]) torch.Size([5924])
@@ -54,21 +54,7 @@ def get_recall(x, y, ds_name, hyp_c):
     else:
         dist_m = x @ x.T
 
-    y_cur = y[dist_m.topk(1 + max(k_list), largest=True)[1][:, 1:]]  # torch.Size([5924, 32])
-    
-    # =================== new metric =======================
-    gt = y.cpu().numpy()
-    pred = y_cur[:,:1].reshape(-1).cpu().numpy()  # torch.Size([5924])
-    # print('01', gt.shape, pred.shape)
-    # 计算NMI评价指标
-    nmi = normalized_mutual_info_score(gt, pred)
-    print("NMI score:", nmi)
-    # 计算RI评价指标
-    ri = adjusted_rand_score(gt, pred)
-    print("RI score:", ri)
-    # print('1', y_cur.size(), y_cur)
-    # print(zz)
-    # =====================================================
+    y_cur = y[dist_m.topk(1 + max(k_list), largest=True)[1][:, 1:]]  
     
     y = y.cpu()
     y_cur = y_cur.float().cpu()
@@ -135,10 +121,9 @@ def get_emb(
         sampler=sampler,
     )
     model.eval()
-    x, y = eval_dataset(model, dl_eval, skip_head)  # the eval of cub dataset: torch.Size([5924, 128]) torch.Size([5924])
+    x, y = eval_dataset(model, dl_eval, skip_head)  
     y = y.cuda()
     if world_size > 1:
-        print('*********************')
         all_x = [torch.zeros_like(x) for _ in range(world_size)]
         all_y = [torch.zeros_like(y) for _ in range(world_size)]
         torch.distributed.all_gather(all_x, x)
@@ -150,11 +135,11 @@ def get_emb(
 
 def eval_dataset(model, dl, skip_head):
     all_x, all_y = [], []
-    for x, y in dl:  # torch.Size([100, 3, 224, 224]) label y: torch.Size([100]) -> 100*i = all sample numbers of (100-200) classes in cub dataset
+    for x, y in dl:  
         with torch.no_grad():
             x = x.cuda(non_blocking=True)
             logits = model(x, y, skip_head=skip_head)
-            all_x.append(logits)  # the outputs of model: torch.Size([100, 128])
+            all_x.append(logits)  
         all_y.append(y)
     return torch.cat(all_x), torch.cat(all_y)
 

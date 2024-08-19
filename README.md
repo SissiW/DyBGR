@@ -27,7 +27,7 @@ schemes. Extensive experiments on deep metric learning tasks demonstrate the eff
 ![results](https://github.com/SissiW/DyBGR/blob/main/results.png)
 
 ## Installation
-python==3.9.7, pytorch-metric-learning==1.3.0, numpy==1.21, timm==0.3.2, pytorch==2.3.0, torch-cluster==1.6.0, torchaudio=0.10.0+cu11.1
+python==3.9.7, pytorch-metric-learning==1.3.0, numpy==1.21, timm==0.3.2, pytorch==2.3.0, torch-scatter==2.0.8, torchaudio=0.8.0
 
 ## training & testing
 sh train.sh
